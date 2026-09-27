@@ -1,0 +1,4 @@
+.DS_Store
+.quarto/
+# leftover libs from an earlier non-embedded render; index.html is self-contained
+_site/index_files/

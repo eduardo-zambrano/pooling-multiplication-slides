@@ -1,0 +1,314 @@
+/*-- scss:defaults --*/
+
+$font-family-sans-serif: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+$presentation-heading-font: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+$presentation-font-size-root: 34px;
+$presentation-heading-color: #17324d;
+$body-color: #202a33;
+$link-color: #1d6f8a;
+$code-color: #8d3c55;
+$presentation-title-slide-text-align: left;
+
+/*-- scss:rules --*/
+
+:root {
+  --navy: #17324d;
+  --teal: #1d6f8a;
+  --rust: #a34b2a;
+  --gold: #c28b27;
+  --ink: #202a33;
+  --muted: #66737e;
+  --paper: #fbfaf7;
+  --wash: #eef4f5;
+}
+
+.reveal {
+  background: var(--paper);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides section {
+  padding-top: 0.15em;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: var(--navy);
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  text-transform: none;
+}
+
+.reveal h2 {
+  margin-bottom: 0.55em;
+  padding-bottom: 0.18em;
+  border-bottom: 3px solid rgba(29, 111, 138, 0.24);
+}
+
+.reveal .title-slide h1 {
+  max-width: 1100px;
+  font-size: 2.15em;
+  line-height: 1.05;
+  margin-top: 1.15em;
+}
+
+.reveal .title-slide .subtitle {
+  max-width: 1050px;
+  color: var(--teal);
+  font-size: 1.0em;
+  margin-top: 0.85em;
+}
+
+.reveal .title-slide .author,
+.reveal .title-slide .institute,
+.reveal .title-slide .date {
+  color: var(--muted);
+}
+
+.reveal p,
+.reveal li {
+  line-height: 1.28;
+}
+
+.reveal li + li {
+  margin-top: 0.32em;
+}
+
+.reveal blockquote {
+  width: 88%;
+  margin: 0.8em auto;
+  padding: 0.25em 0 0.25em 0.9em;
+  border-left: 7px solid var(--teal);
+  color: var(--navy);
+  background: transparent;
+  box-shadow: none;
+  font-style: normal;
+}
+
+.reveal table {
+  margin: 0.5em auto;
+  font-size: 0.82em;
+}
+
+.reveal table th {
+  color: var(--navy);
+  border-bottom: 2px solid var(--teal);
+}
+
+.reveal table td,
+.reveal table th {
+  padding: 0.25em 0.55em;
+}
+
+.reveal .MathJax {
+  color: var(--ink);
+}
+
+.reveal math[display="block"] {
+  font-size: 1.08em;
+  margin: 0.45em auto;
+}
+
+.reveal .accent {
+  color: var(--rust);
+  font-weight: 650;
+}
+
+.reveal .key {
+  color: var(--navy);
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.reveal .bigmath {
+  font-size: 1.18em;
+  margin: 0.8em 0;
+}
+
+.reveal .muted {
+  color: var(--muted);
+}
+
+.reveal .small {
+  font-size: 0.78em;
+}
+
+.reveal #formal-verification .lean-excerpt pre {
+  width: 100%;
+  margin: 0.35em 0;
+  font-size: 0.52em;
+}
+
+.reveal .tight p,
+.reveal .tight li {
+  line-height: 1.14;
+}
+
+.reveal .wash {
+  background: var(--wash);
+  border-left: 6px solid var(--teal);
+  padding: 0.55em 0.75em;
+  margin: 0.65em 0;
+}
+
+.reveal .count-location-dictionary {
+  text-align: center;
+  margin: 0.2em auto 0.9em;
+}
+
+.reveal .count-location-dictionary p {
+  margin: 0;
+}
+
+.reveal .count-location-dictionary strong {
+  color: var(--teal);
+  font-weight: 650;
+}
+
+.reveal .proof-chain {
+  max-width: 1100px;
+  margin: 0.8em auto 0;
+  text-align: center;
+}
+
+.reveal .proof-step {
+  text-align: center;
+}
+
+.reveal .proof-chain .proof-step {
+  margin: 0;
+}
+
+.reveal .proof-chain .proof-down {
+  color: var(--muted);
+  font-size: 1.35em;
+  line-height: 1;
+  margin: 0.08em 0;
+  text-align: center;
+}
+
+.reveal .proof-chain math[display="block"] {
+  font-size: 1.14em;
+  margin: 0.18em auto;
+}
+
+.reveal .proof-chain .proof-conclusion {
+  margin-top: 0.05em;
+}
+
+.reveal .proof-chain-compact {
+  margin-top: 0.35em;
+}
+
+.reveal .proof-chain-compact .proof-down {
+  font-size: 1.1em;
+  margin: -0.06em 0;
+}
+
+.reveal .proof-chain-compact math[display="block"] {
+  font-size: 1em;
+  margin: 0.06em auto;
+}
+
+.reveal .definition {
+  border-left: 6px solid var(--gold);
+  padding-left: 0.75em;
+  margin: 0.65em 0;
+}
+
+.reveal .aside,
+.reveal aside {
+  color: var(--muted);
+  font-size: 0.58em;
+}
+
+.reveal .slide-number {
+  color: var(--muted);
+  background: transparent;
+  font-size: 15px;
+}
+
+.reveal .proof-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.25em;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.3em;
+  color: var(--muted);
+  font-size: 0.62em;
+  text-align: left;
+}
+
+.reveal .proof-footer p {
+  margin: 0;
+}
+
+.reveal .formula-box {
+  width: max-content;
+  max-width: 100%;
+  margin: 0.45em auto;
+  border: 2px solid var(--teal);
+  border-radius: 4px;
+  background: var(--wash);
+  padding: 0.2em 0.75em;
+}
+
+.reveal .formula-box p,
+.reveal .formula-box math[display="block"] {
+  margin: 0;
+}
+
+.reveal .iteration-steps .fragment:not(.formula-box) > p {
+  margin: 0.1em 0;
+}
+
+.reveal .iteration-steps .fragment:not(.formula-box) > p math[display="block"] {
+  margin: 0.06em auto;
+  font-size: 1em;
+}
+
+.reveal .iteration-steps .formula-box {
+  margin: 0.08em auto;
+  padding: 0.06em 0.6em;
+}
+
+.reveal .centered-label {
+  text-align: center;
+}
+
+.reveal .centered-label p {
+  margin: 0;
+}
+
+.reveal .risk-geometry-plot {
+  margin: -0.25em 0 -1em;
+  text-align: center;
+  line-height: 0;
+}
+
+.reveal .risk-geometry-plot p {
+  margin: 0;
+}
+
+.reveal .limit-box {
+  margin: 2.25em auto 0;
+  font-size: 0.9em;
+}
+
+.reveal .formula-box-corner {
+  position: absolute;
+  right: 3.5em;
+  bottom: 0.65em;
+  margin: 0;
+  padding: 0.12em 0.55em;
+  font-size: 0.72em;
+}
+
+.reveal .progress span {
+  background: var(--teal);
+}
